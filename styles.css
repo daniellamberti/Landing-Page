@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    color: darkorange;
+}
+
+input {
+    margin: 3px;
+    padding: 5px;
+}
+
+body {
+    background-color: #eee;
+    font-family: Lato, sans-serif;
+}
+
+.div-wrap-container {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+}
+
+#header-img {
+    display: inline;
+    float: left;
+}
+
+.title-page {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+#nav-bar {
+    display: inline;
+    float: right;
+    margin-right: 60px;
+}
+
+.nav-bar, .ul-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-items: space evenly;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.ul-nav-bar li {
+    margin: 0 30px;
+}
+
+#form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+#services {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom:70px;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: 135px 820px;
+    column-gap: 0;
+    align-items: start;
+}
+
+.div-grid p {
+    grid-column: 2;
+}
+
+iframe {
+    margin-bottom: 60px;
+}
+
+.instruments {
+    display: grid;
+    width: 77%;
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    column-gap: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.instruments, .tenor-tromb, .bass-tromb, .valve-tromb  {
+    text-align: center;
+}
+
+.tenor-tromb, .bass-tromb, .valve-tromb {
+    height: 290px;
+    border: 1px solid black;
+}
+
+.inst-h3 {
+    margin-top: 10px;
+    height: 45px;
+    font-size: 20px;
+    font-family: airia, sans-serif;
+    background-color: rgb(226, 219, 219);
+}
+
+.inst-ul {
+    list-style-type: none;
+}
+
+.inst-ul li {
+    margin: 15px;
+}
+
+.price {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 5px 20px;
+    background-color: #f1c40f;
+    font-size: 18px;
+    border: none !important;
+}
+
+footer {
+    display: block;
+    margin: auto;
+    width: 79%;
+    height: auto;
+    margin-top: 120px;
+    background-color: rgb(226, 219, 219);
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.ul-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.ul-footer li {
+    margin: 5px;
+    text-align: center;
+}
+
+.copyright {
+    text-align: right;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+#submit {
+    font-weight: 800;
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 12px;
+    margin-top: 6px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #header-img {
+        display: block;
+        margin: auto;
+    }
+
+    #nav-bar {
+        display: block;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .ul-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 8px;
+        margin-right: 20px;
+    }
+
+    .title-page {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    #header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #eee;
+        font-family: 'Exo 2', sans-serif;
+        padding: 1em;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .instruments {
+        display: grid;
+        width: 77%;
+        height: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px;
+        column-gap: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .inst-ul li {
+        margin: 8px;
+    }
+}
